@@ -1,0 +1,39 @@
+{%extends 'base.html'%}
+{%block title%} Contato {%endblock%}
+{%block content%}
+
+<body>
+    <div class="container">
+        <div>
+            <img src="./static/imagens/logo.png" alt="logo">
+        </div>
+        <div>
+            <span>
+                <a href="/">Home</a>&nbsp;|&nbsp;
+                <a href="/quemsomos">Quem somos</a>&nbsp;|&nbsp;
+                <a href="/contato">Contato</a>
+        </div>
+
+    </div>
+    <div>
+        <h1>Entre em contato</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum tenetur quo obcaecati. </p>
+        <hr>
+    <form action="">
+        <label for="email">Seu Email:</label><br>
+        <input type="email" required><br>
+        <label for="senha">Assunto:</label><br>
+        <input type="text"><br>
+        <label for="descricao">Descrição</label><br>
+        <textarea name="" id="" cols="19" rows="2"></textarea>
+        <div id="enviar">
+            <input type="submit" name="Enviar" id="Enviar">
+        </div>
+    </div>
+        
+    </form>
+    <p class="direitos"><b>Todos os direitos reservados</b></p>
+    
+</body>
+</html>
+{%endblock%}
