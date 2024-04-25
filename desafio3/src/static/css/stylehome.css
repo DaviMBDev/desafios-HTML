@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.jumbotron {
+    background-color: #333;
+    color: #fff;
+    padding: 100px 0;
+    margin-bottom: 0; /* Remove o espaço extra do jumbotron */
+}
+.features-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.feature {
+    text-align: center;
+    padding: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra */
+    margin-bottom: 40px; /* Espaçamento entre as caixas */
+    width: 80%; /* Largura das caixas */
+    max-width: 600px; /* Largura máxima */
+}
+.feature:nth-child(odd) {
+    margin-left: auto; /* Define a margem esquerda automática para as caixas ímpares */
+    text-align: right; /* Alinha o texto à direita */
+}
+.feature:nth-child(even) {
+    margin-right: auto; /* Define a margem direita automática para as caixas pares */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+.feature img {
+    max-width: 100%;
+}
