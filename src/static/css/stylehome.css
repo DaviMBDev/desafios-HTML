@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #C2C5CC;
+}
+.jumbotron {
+    background-color: #333;
+    color: #fff;
+    padding: 100px 0;
+    margin-bottom: 0; /* Remove o espaço extra do jumbotron */
+}
+.features-container {
+    margin-top: 2.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.feature {
+    text-align: center;
+    padding: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra */
+    margin-bottom: 40px; /* Espaçamento entre as caixas */
+    width: 80%; /* Largura das caixas */
+    max-width: 600px; /* Largura máxima */
+}
+.feature:nth-child(odd) {
+    margin-left: auto; /* Define a margem esquerda automática para as caixas ímpares */
+    text-align: right; /* Alinha o texto à direita */
+}
+.feature:nth-child(even) {
+    margin-right: auto; /* Define a margem direita automática para as caixas pares */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+.feature img {
+    max-width: 100%;
+}
+.jumbotron{
+    opacity: 80%;
+    background: black;
+    
+}
+.feature{
+    background-color: #838A92;
+    max-width: 125%;
+    border-radius: 50px;
+    box-shadow: 3px 3px 3px 3px #00000091;
+}
+.images{
+    width: 50%;
+    border-radius: 25px;
+}
+h1{
+    opacity: none;
+}

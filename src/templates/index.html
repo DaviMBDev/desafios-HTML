@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block title %}Motores{% endblock %}
+
+{% block content %}
+
+
+<!-- Jumbotron -->
+<div class="jumbotron" style="background-image: url(https://www.mustangspecs.com/wp-content/uploads/2020/05/2019-Ford-Mustang-Bullitt-V9-1080.jpg); background-size: 100%;">
+    <div class="overlay">
+    <div class="container for-about">
+        <h1 class="display-4">Conheça os Tipos de Motores Automotivos</h1>
+        <p class="lead">Descubra as características e aplicações de cada tipo de motor.</p>
+    </div>
+    </div>
+</div>
+
+
+<!-- Conteúdo -->
+<div class="container features-container">
+    <section id="inline" class="feature">
+        <h2>Motor em Linha</h2>
+        <p>O motor em linha é um tipo de motor em que os cilindros são dispostos em uma linha reta.</p>
+        <img class="images" src="../static/images/motor-in-line.jpg" alt="Motor em Linha">
+    </section>
+
+    <section id="v" class="feature">
+        <h2>Motor em V</h2>
+        <p>No motor em V, os cilindros são dispostos em forma de V, o que permite uma configuração mais compacta.</p>
+        <img class="images" src="../static/images/motor-V.jpg" alt="Motor em V">
+    </section>
+
+    <section id="w" class="feature">
+        <h2>Motor em W</h2>
+        <p>O motor em W é uma variação do motor em V, com uma disposição adicional de cilindros.</p>
+        <img class="images" src="../static/images/motor-W.jpg" alt="Motor em W"> 
+    </section>
+
+    <section id="boxer" class="feature">
+        <h2>Motor Boxer</h2>
+        <p>O motor boxer possui cilindros opostos em cada lado do motor, o que proporciona um baixo centro de gravidade.</p>
+        <img class="images" src="../static/images/motor-boxer.jpg" alt="Motor Boxer">
+    </section>
+</div>
+
+<!-- Rodapé -->
+<footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+        &copy; 2024 Tipos de Motores Automotivos
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+{%endblock%}
