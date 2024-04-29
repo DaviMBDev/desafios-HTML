@@ -1,19 +1,48 @@
+/* Estilos gerais */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    font: #000;
     background-color: #C2C5CC;
 }
+
+/* Navbar */
+.navbar {
+    margin-bottom: 20px; /* Adiciona espaço abaixo da navbar */
+}
+
+/* Jumbotron */
 .jumbotron {
     background-color: #333;
-    color: #fff;
-    padding: 100px 0;
+    color: #ffffff;
+    padding: 100px;
     margin-bottom: 0; /* Remove o espaço extra do jumbotron */
+    margin-top: -20px;
+    background-repeat: no-repeat;
 }
+.jumbotron .jumbotron-text {
+    color: #ffffff;
+    padding: 100px;
+    background-repeat: no-repeat;
+}
+
+.jumbotron h1 {
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.jumbotron p {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+/* Conteúdo */
 .features-container {
     margin-top: 2.5%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .feature {
     text-align: center;
     padding: 50px;
@@ -21,33 +50,79 @@ body {
     margin-bottom: 40px; /* Espaçamento entre as caixas */
     width: 80%; /* Largura das caixas */
     max-width: 600px; /* Largura máxima */
-}
-.feature:nth-child(odd) {
-    margin-left: auto; /* Define a margem esquerda automática para as caixas ímpares */
-    text-align: right; /* Alinha o texto à direita */
-}
-.feature:nth-child(even) {
-    margin-right: auto; /* Define a margem direita automática para as caixas pares */
-    text-align: left; /* Alinha o texto à esquerda */
-}
-.feature img {
-    max-width: 100%;
-}
-.jumbotron{
-    opacity: 80%;
-    background: black;
-    
-}
-.feature{
     background-color: #838A92;
     max-width: 125%;
     border-radius: 50px;
     box-shadow: 3px 3px 3px 3px #00000091;
 }
-.images{
-    width: 50%;
-    border-radius: 25px;
+
+.feature:nth-child(odd) {
+    margin-left: auto; /* Define a margem esquerda automática para as caixas ímpares */
+    text-align: right; /* Alinha o texto à direita */
 }
-h1{
-    opacity: none;
+
+.feature:nth-child(even) {
+    margin-right: auto; /* Define a margem direita automática para as caixas pares */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.feature img {
+    max-width: 100%;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333; /* Cor de fundo do rodapé */
+    color: #fff; /* Cor do texto do rodapé */
+    padding: 20px 0; /* Espaçamento interno do rodapé */
+}
+
+
+#jumbotron1{
+    height: 1000px;
+}
+.images{
+    width: 55%;
+    border-radius: 20px;
+}
+#images{
+    width: 80%;
+    border-radius: 20px;
+}
+#capa1{
+    opacity: 80%;
+}
+.jumbotron .for-about {
+    padding-top: 250px; /* Ajuste o valor conforme necessário */
+}
+
+@media screen and (max-width: 768px) {
+    /* Estilos para telas menores que 768px de largura */
+    .jumbotron {
+        padding: 30px; /* Ajusta o padding do jumbotron */
+        height: auto; /* Ajusta a altura do jumbotron para automático */
+        background-size: cover; /* Ajusta o tamanho do background */
+    }
+    .jumbotron .for-about {
+        padding-top: 50px; /* Ajusta o padding do conteúdo do jumbotron */
+    }
+    .display-4 {
+        font-size: 2rem; /* Ajusta o tamanho da fonte do display-4 */
+        margin-top: 20px; /* Ajusta o margin-top do display-4 */
+        margin-bottom: 0; /* Remove o margin-bottom do display-4 */
+    }
+    .lead {
+        font-size: 1.2rem; /* Ajusta o tamanho da fonte do lead */
+        margin-top: 10px; /* Ajusta o margin-top do lead */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    /* Estilos para telas menores que 576px de largura */
+    .display-4 {
+        font-size: 1.5rem; /* Reduz ainda mais o tamanho da fonte do display-4 */
+    }
+    .lead {
+        font-size: 1rem; /* Reduz ainda mais o tamanho da fonte do lead */
+    }
 }

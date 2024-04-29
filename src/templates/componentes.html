@@ -1,25 +1,70 @@
 {% extends "base.html" %}
-
 {% block title %}Componentes{% endblock %}
-
 {% block content %}
+<!-- Jumbotron -->
+<div class="jumbotron" style="background-image: url('{{ url_for('static', filename='images/desmont1.jpeg') }}');">
+    <div class="jumbotron-text">
+        <div class="container for-about">
+            <h1 class="display-4">Exemplos de Carros por Tipo de Motor</h1>
+            <p class="lead">Conheça alguns exemplos de carros que utilizam cada tipo de motor automotivo.</p>
+        </div>
+    </div>
+</div>
+<!-- Conteúdo -->
+<div class="container features-container">
+    <section id="valvulas" class="feature">
+        <h2>Válvulas</h2>
+        <p>As válvulas de admissão e escape são componentes que se abrem na hora adequada a fim de deixar que combustível e ar entrem e saiam. É válido ressaltar que ambas as válvulas ficam fechadas no momento da compressão e a combustão de modo que a câmara de combustão fique vedada.</p>
+        <img class="images" src="{{ url_for('static', filename='images/valvula.webp') }}" alt="Válvulas">
+    </section>
 
+    <section id="vela-ignicao" class="feature">
+        <h2>Vela de Ignição</h2>
+        <p>A vela de ignição é responsável por produzir a faísca que inflama a mistura de combustível e ar, iniciando o processo de combustão. É essencial que a faísca ocorra no momento certo para garantir o funcionamento adequado do motor.</p>
+        <img class="images" src="{{ url_for('static', filename='images/vela.jpg') }}" alt="Vela de Ingnição">
+    </section>
 
+    <section id="pistao" class="feature">
+        <h2>Pistão</h2>
+        <p>O pistão é uma peça cilíndrica de metal que se move para cima e para baixo dentro do cilindro do motor, convertendo a energia da combustão em movimento linear.</p>
+        <img class="images" src="{{ url_for('static', filename='images/pistao.jpg') }}" alt="Pistão">
+    </section>
 
+    <section id="biela" class="feature">
+        <h2>Biela</h2>
+        <p>A biela é uma haste que conecta o pistão ao eixo de manivela, transmitindo o movimento de vai e vem do pistão para o eixo, convertendo-o em movimento rotativo.</p>
+        <img class="images" src="{{ url_for('static', filename='images/biela.jpg') }}" alt="Biela">
+    </section>
 
+    <section id="virabrequim" class="feature">
+        <h2>Virabrequim</h2>
+        <p>O virabrequim é uma peça que converte o movimento linear do pistão em movimento rotativo, impulsionando as rodas do veículo através do eixo de transmissão.</p>
+        <img class="images" src="{{ url_for('static', filename='images/virabrequim.webp') }}" alt="Virabrequim">
+    </section>
 
+    <section id="bloco-motor" class="feature">
+        <h2>Bloco do Motor</h2>
+        <p>O bloco do motor é a estrutura principal que abriga os cilindros do motor, resistindo às forças geradas pelas explosões dentro da câmara de combustão e fornecendo suporte para os sistemas de lubrificação e arrefecimento.</p>
+        <img class="images" src="{{ url_for('static', filename='images/bloco.png') }}" alt="Bloco de Motor">
+    </section>
 
+    <section id="radiador-reservatorio" class="feature">
+        <h2>Radiador</h2>
+        <p>O radiador resfria o líquido de arrefecimento do motor, que é armazenado e distribuído pelo reservatório. Esse sistema mantém a temperatura do motor dentro dos limites adequados, evitando o superaquecimento.</p>
+        <img class="images" src="{{ url_for('static', filename='images/radiador.jpg') }}" alt="Radiador">
+    </section>
+</div>
 
+<!-- Rodapé -->
+<footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+        &copy; 2024 Motores Automotivos
+    </div>
+</footer>
 
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-
-
-
-
-
-
-
-
-
-
-{%endblock%}
+{% endblock %}

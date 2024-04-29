@@ -1,44 +1,38 @@
 {% extends "base.html" %}
-
 {% block title %}Motores{% endblock %}
-
 {% block content %}
-
-
 <!-- Jumbotron -->
-<div class="jumbotron" style="background-image: url(https://www.mustangspecs.com/wp-content/uploads/2020/05/2019-Ford-Mustang-Bullitt-V9-1080.jpg); background-size: 100%;">
-    <div class="overlay">
-    <div class="container for-about">
-        <h1 class="display-4">Conheça os Tipos de Motores Automotivos</h1>
-        <p class="lead">Descubra as características e aplicações de cada tipo de motor.</p>
-    </div>
+<div class="jumbotron" style="background-image: url('{{ url_for('static', filename='images/jumbotron-background.jpg') }}');">
+    <div class="jumbotron-text">
+        <div class="container for-about">
+            <h1 class="display-4">Exemplos de Carros por Tipo de Motor</h1>
+            <p class="lead">Conheça alguns exemplos de carros que utilizam cada tipo de motor automotivo.</p>
+        </div>
     </div>
 </div>
-
-
 <!-- Conteúdo -->
 <div class="container features-container">
     <section id="inline" class="feature">
         <h2>Motor em Linha</h2>
-        <p>O motor em linha é um tipo de motor em que os cilindros são dispostos em uma linha reta.</p>
+        <p>O motor em linha é caracterizado pela disposição linear dos cilindros, alinhados em uma única fileira. Essa configuração é conhecida por sua simplicidade e eficiência, proporcionando uma distribuição uniforme de potência ao longo do eixo do motor. Motores em linha são comumente encontrados em veículos de passeio e são apreciados por sua suavidade de funcionamento e facilidade de manutenção.</p>
         <img class="images" src="../static/images/motor-in-line.jpg" alt="Motor em Linha">
     </section>
 
     <section id="v" class="feature">
         <h2>Motor em V</h2>
-        <p>No motor em V, os cilindros são dispostos em forma de V, o que permite uma configuração mais compacta.</p>
+        <p>No motor em V, os cilindros são dispostos em um ângulo em forma de V em relação ao virabrequim. Essa configuração permite um arranjo mais compacto do motor, ideal para veículos com espaço limitado sob o capô. Os motores em V são conhecidos por sua potência e desempenho, sendo frequentemente utilizados em veículos de alto desempenho e de luxo.</p>
         <img class="images" src="../static/images/motor-V.jpg" alt="Motor em V">
     </section>
 
     <section id="w" class="feature">
         <h2>Motor em W</h2>
-        <p>O motor em W é uma variação do motor em V, com uma disposição adicional de cilindros.</p>
+        <p>O motor em W é uma variação do motor em V, onde são adicionados cilindros extras para formar uma configuração em W. Essa disposição permite uma distribuição mais uniforme do peso e uma redução no centro de gravidade do veículo. Motores em W são geralmente encontrados em veículos de alto desempenho e de luxo, oferecendo uma combinação de potência, suavidade e eficiência.</p>
         <img class="images" src="../static/images/motor-W.jpg" alt="Motor em W"> 
     </section>
 
     <section id="boxer" class="feature">
         <h2>Motor Boxer</h2>
-        <p>O motor boxer possui cilindros opostos em cada lado do motor, o que proporciona um baixo centro de gravidade.</p>
+        <p>O motor Boxer, também conhecido como motor horizontalmente oposto, possui cilindros opostos que se movem em direções opostas em relação ao virabrequim. Isso resulta em um perfil de motor mais baixo e uma distribuição de peso mais equilibrada, proporcionando uma melhor estabilidade e controle do veículo. Os motores Boxer são frequentemente utilizados em veículos com tração nas quatro rodas e são apreciados por sua confiabilidade e desempenho.</p>
         <img class="images" src="../static/images/motor-boxer.jpg" alt="Motor Boxer">
     </section>
 </div>
@@ -46,7 +40,7 @@
 <!-- Rodapé -->
 <footer class="bg-dark text-white text-center py-4">
     <div class="container">
-        &copy; 2024 Tipos de Motores Automotivos
+        &copy; 2024 Motores Automotivos
     </div>
 </footer>
 
@@ -55,4 +49,4 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-{%endblock%}
+{% endblock %}
