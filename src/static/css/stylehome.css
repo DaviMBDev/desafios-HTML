@@ -19,22 +19,7 @@ body {
     margin-top: -20px;
     background-repeat: no-repeat;
 }
-.jumbotron .jumbotron-text {
-    color: #ffffff;
-    padding: 100px;
-    background-repeat: no-repeat;
-}
 
-.jumbotron h1 {
-    font-size: 2.5rem;
-    margin-top: 0;
-    margin-bottom: 20px;
-}
-
-.jumbotron p {
-    font-size: 1.2rem;
-    margin-bottom: 0;
-}
 /* Conteúdo */
 .features-container {
     margin-top: 2.5%;
@@ -98,22 +83,24 @@ footer {
 
 @media screen and (max-width: 768px) {
     /* Estilos para telas menores que 768px de largura */
+    .feature {
+        width: 90%; /* Reduz a largura das caixas */
+    }
     .jumbotron {
-        padding: 30px; /* Ajusta o padding do jumbotron */
-        height: auto; /* Ajusta a altura do jumbotron para automático */
-        background-size: cover; /* Ajusta o tamanho do background */
+        padding: 50px; /* Reduz o preenchimento do jumbotron */
     }
     .jumbotron .for-about {
-        padding-top: 50px; /* Ajusta o padding do conteúdo do jumbotron */
+        padding-top: 150px; /* Ajusta o espaçamento do conteúdo no jumbotron */
     }
     .display-4 {
-        font-size: 2rem; /* Ajusta o tamanho da fonte do display-4 */
-        margin-top: 20px; /* Ajusta o margin-top do display-4 */
-        margin-bottom: 0; /* Remove o margin-bottom do display-4 */
+        margin-top: -100px; /* Ajusta a margem superior do título */
+        margin-left: -50px; /* Ajusta a margem esquerda do título */
+        font-size: 2rem; /* Reduz o tamanho da fonte do título */
     }
     .lead {
-        font-size: 1.2rem; /* Ajusta o tamanho da fonte do lead */
-        margin-top: 10px; /* Ajusta o margin-top do lead */
+        margin-top: 50px; /* Ajusta a margem superior do texto de introdução */
+        margin-left: -40px; /* Ajusta a margem esquerda do texto de introdução */
+        font-size: 1rem; /* Reduz o tamanho da fonte do texto de introdução */
     }
 }
 
