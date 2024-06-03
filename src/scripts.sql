@@ -1,0 +1,10 @@
+CREATE DATABASE carros_db;
+
+USE carros_db;
+
+CREATE TABLE opinioes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255),
+    opiniao TEXT,
+    data TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
